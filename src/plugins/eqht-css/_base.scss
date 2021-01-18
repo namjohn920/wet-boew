@@ -4,14 +4,15 @@
 	flex-wrap: wrap;
 	height: 100%;
 
-	>[class*="col-"]{
+	>[class*="col-"], >section{
 		display:flex;
 		flex-direction: column;
 		flex-grow:1;
 	}
-}
-.wb-eqht-grd .hght-inhrt{
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
+
+	>[class*="col-"]>section, .wb-eqht-grd .hght-inhrt {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+	}
 }
